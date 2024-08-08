@@ -1,0 +1,36 @@
+.playground-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .playground-title {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+  }
+  
+  .playground-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .playground-button {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 70px;
+    background-color: #FFF8EF;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 330px;
+    height: 150px;
+  
+    &:hover {
+      background-color: #7C8CFD;
+    }
+  }
+  
