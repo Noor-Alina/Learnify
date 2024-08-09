@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './Employees.scss'; // Optional: for styling
+import dataObject from "../../data/employees.json";
+
+const prompts = dataObject.prompts; //array
 
 const mockData = {
   questions: [
@@ -11,37 +14,49 @@ const mockData = {
 };
 
 const Employees = () => {
-  const [selectedQuestion, setSelectedQuestion] = useState(null);
+  const [selectedPrompt, setSelectedPrompt] = useState(null);
   const [response, setResponse] = useState('');
+  const [followUp, setFollowUP] = useState(null);
+  const [confirmation, setConfirmation] = useState('')
 
   const handleQuestionClick = (id) => {
-    const questionData = mockData.questions.find((q) => q.id === id);
-    setResponse(questionData ? questionData.response : '');
+    const promptData = prompts.find((p) => p.id === id);
+    setResponse(promptData ? promptData.answer : '');
     setSelectedQuestion(id);
+
+    //continue for if it has follow ups
+    if (promptData.confirmation) {
+      setConfirmation(promptData.confirmation);
+      //jsx==> followUp.map(
+    }
   };
+
+  /*
+  
+  */
 
   return (
     <div className="employees-container">
       <div className="employees-card">
         <h1 className="employees-title">Employees</h1>
-        <p className="example-text">Example </p> 
+        <p className="example-text">Example </p>
         <img
           src="src/assets/images/static.png"
           alt="Employees"
           className="employees-image"
         />
         <div className="prompt-response">
-        <p className="prompt-info">choose a prompt question to see the response: </p> 
+          <p className="prompt-info">choose a prompt question to see the response: </p>
           <table className="questions-table">
             <tbody>
-              {mockData.questions.map((question) => (
-                <tr key={question.id}>
+              {prompts.map((option) => (
+                <tr key={option.id}>
                   <td>
                     <button
-                      className={`question-button ${selectedQuestion === question.id ? 'selected' : ''}`}
-                      onClick={() => handleQuestionClick(question.id)}
+                      className={`question-button ${selectedPrompt === option.id ? 'selected' : ''}`}
+                      onClick={() => handleQuestionClick(option.id)}
                     >
-                      {question.question}
+                      {option.question}
                     </button>
                   </td>
                 </tr>
