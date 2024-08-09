@@ -1,0 +1,45 @@
+@import url('../../styles/styles.scss');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: #7c8cfd;
+  font-family: "Coustard";
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.hero {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero__description {
+    padding-top: 3rem;
+
+    &--title {
+        color: #fff8ef;
+        font-size: 3.5rem;
+    }
+
+    &--subtitle {
+        color: #fff8ef;
+        font-size: 1.3125rem;
+    }
+
+    &--button {
+        border-radius: 10%;
+        border: none;
+        background-color: #fff8ef;
+    }
+}
