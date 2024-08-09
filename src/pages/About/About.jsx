@@ -1,6 +1,7 @@
 import "./About.scss";
 
 function About() {
+<<<<<<< HEAD
   return (
     <ul className="principles">
       <li className="principles__item">
@@ -71,6 +72,9 @@ function About() {
       </li>
     </ul>
   );
+=======
+  return <div>About</div>;
+>>>>>>> develop
 }
 
 export default About;
