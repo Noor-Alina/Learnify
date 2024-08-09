@@ -1,7 +1,6 @@
 import "./About.scss";
 
 function About() {
-<<<<<<< HEAD
   return (
     <ul className="principles">
       <li className="principles__item">
@@ -26,7 +25,6 @@ function About() {
       </li>
       <li className="principles__item">
         <div className="principles__title-container">
-          {" "}
           <h3 className="principles__title">Transparency</h3>
         </div>
         <p className="principles__content">
@@ -38,7 +36,6 @@ function About() {
       </li>
       <li className="principles__item">
         <div className="principles__title-container">
-          {" "}
           <h3 className="principles__title">Privacy and security</h3>
         </div>
         <p className="principles__content">
@@ -49,7 +46,6 @@ function About() {
       </li>
       <li className="principles__item">
         <div className="principles__title-container">
-          {" "}
           <h3 className="principles__title">Accountability</h3>
         </div>
         <p className="principles__content">
@@ -62,7 +58,6 @@ function About() {
       </li>
       <li className="principles__item">
         <div className="principles__title-container">
-          {" "}
           <h3 className="principles__title">Next steps</h3>
         </div>
         <p className="principles__content">
@@ -72,9 +67,6 @@ function About() {
       </li>
     </ul>
   );
-=======
-  return <div>About</div>;
->>>>>>> develop
 }
 
 export default About;

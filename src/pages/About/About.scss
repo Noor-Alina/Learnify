@@ -9,10 +9,10 @@ html {
 
 body {
   margin: 0;
-  height: 100%;
 }
 
 .principles {
+  background-color: white;
   list-style-type: none;
   margin: 0;
   display: flex;
@@ -28,8 +28,13 @@ body {
     width: 48%;
     text-align: center;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     margin-bottom: 3rem;
+    &:hover {
+      cursor: pointer;
+      background-color: lightgrey;
+      border-radius: 0.25rem;
+    }
   }
 
   &__title {

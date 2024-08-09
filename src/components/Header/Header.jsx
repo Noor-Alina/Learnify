@@ -10,7 +10,9 @@ function Header() {
   useEffect(() => {
     if (
       location.pathname.startsWith("/playground") ||
-      location.pathname.startsWith("/employees")
+      location.pathname.startsWith("/employees") ||
+      location.pathname.startsWith("/students") ||
+      location.pathname.startsWith("/parents")
     ) {
       setPlaygroundActive(true);
     } else {
