@@ -5,7 +5,7 @@ function About() {
     <ul className="principles">
       <li className="principles__item">
         <div className="principles__title-container">
-          <h3 className="principles__title">Fairness and inclusiveness</h3>
+          <h3 className="principles__title">Fairness</h3>
         </div>
         <p className="principles__content">
           The fairness assessment component of the Responsible AI dashboard
@@ -49,8 +49,7 @@ function About() {
           <h3 className="principles__title">Accountability</h3>
         </div>
         <p className="principles__content">
-          Creates accountability by enabling cross-stakeholder communications.
-          The scorecard also creates accountability by empowering developers to
+          Creates accountability by enabling cross-stakeholder communications and empowering developers to
           configure, download, and share their model health insights with their
           technical and non-technical stakeholders about AI data and model
           health.
@@ -58,11 +57,11 @@ function About() {
       </li>
       <li className="principles__item">
         <div className="principles__title-container">
-          <h3 className="principles__title">Next steps</h3>
+          <h3 className="principles__title">inclusiveness</h3>
         </div>
         <p className="principles__content">
-          Learn about the Responsible AI Standard for building AI systems
-          according to six key principles.
+        This principle focuses on ensuring that AI technologies are accessible to all users, regardless of their abilities or background,
+         promoting digital inclusion and equitable access to technology.
         </p>
       </li>
     </ul>

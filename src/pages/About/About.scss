@@ -34,17 +34,17 @@ body {
     &:hover {
       cursor: pointer;
       background-color: rgb(244, 244, 244);
-      border-radius: 0.25rem;
+      border-radius: 2rem;
     }
   }
 
   &__title {
-    background-color: #FFF789;
+    background-color: #F1DAFF;
     color: black;
-    width: 10rem;
-    height: 5rem;
+    width: 12rem;
+    height: 7rem;
     padding: 1rem;
-    border-radius: 0.25rem;
+    border-radius: 1rem;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -54,9 +54,9 @@ body {
   }
   &__content {
     flex-grow: 1;
-    text-align: left;
-    justify-content: left;
+    text-align: start;
+    justify-content: start;
     margin: 0;
-    font-size: 0.8125rem;
+    font-size: 1rem;
   }
 }

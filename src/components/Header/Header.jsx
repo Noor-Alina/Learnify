@@ -62,7 +62,7 @@ function Header() {
                 isActive ? "header__item header__item--active" : "header__item"
               }
             >
-              About
+              Principles
             </NavLink>
           </li>
         </ul>
