@@ -2,8 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height: 100vh;
     background-color: #f0f0f0;
   }
   
@@ -13,7 +11,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     text-align: center;
-    width: 80%;
+    width: 100%;
     max-width: 800px;
   }
   
@@ -30,45 +28,59 @@
   
   .employees-image {
     width: 100%;
-    height: auto;
     margin-bottom: 2rem;
+  }
+  
+  .prompt-info {
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    padding: 1rem;
+    font-size: 1.2rem;
   }
   
   .prompt-response {
     margin-top: 1rem;
+    width: 100%;
   }
   
   .questions-table {
+    display: flex; 
+    justify-content: center;
+    gap: 1rem;
     width: 100%;
-    margin-bottom: 1rem;
-    border-collapse: collapse;
-  }
-  
-  .questions-table td {
-    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
   }
   
   .question-button {
-    background-color: #007bff;
-    color: white;
+    background-color: #c1c3c4;
+    color: black;
     border: none;
     border-radius: 5px;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
   }
   
   .question-button:hover {
-    background-color: #0056b3;
+    background-color: #7C8CFD;
   }
   
   .question-button.selected {
-    background-color: #0056b3;
+    background-color: #7C8CFD;
   }
   
   .response-section {
     margin-top: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   .response-text {

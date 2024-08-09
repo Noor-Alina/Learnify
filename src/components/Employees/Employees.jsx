@@ -31,6 +31,7 @@ const Employees = () => {
           className="employees-image"
         />
         <div className="prompt-response">
+        <p className="prompt-info">choose a prompt question to see the response: </p> 
           <table className="questions-table">
             <tbody>
               {mockData.questions.map((question) => (
