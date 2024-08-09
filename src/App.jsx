@@ -10,6 +10,7 @@ function App() {
         <BrowserRouter>
             <section className="browser-container">
                 <div className="routes-wrapper">
+                    <Header />
                     <div className="routes-container">
                         <Routes>
                             <Route path="/" element={<Home />} />
