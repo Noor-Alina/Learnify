@@ -1,4 +1,5 @@
-@import url('../../styles/styles.scss');
+@use "../../styles/styles.scss" as *;
+
 
 html,
 body {
@@ -7,7 +8,7 @@ body {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  background: #7c8cfd;
+  background: $learnify-purple;
   font-family: "Coustard";
 }
 
@@ -28,14 +29,14 @@ body {
     padding-top: 5rem;
 
     &--title {
-        color: #fff8ef;
+        color: $learnify-white;
         font-size: 6rem;
         font-weight: 400;
         margin: 0;
     }
 
     &--subtitle {
-        color: #fff8ef;
+        color: $learnify-white;
         font-size: 2rem;
         font-weight: 400;
     }
@@ -43,11 +44,11 @@ body {
     &--button {
         border-radius: 5%;
         border: none;
-        background-color: #fff8ef;
+        background-color: $learnify-white;
         width: 15rem;
         height: 4.5rem;
         font-size: 1.25rem;
-        color: #372d64;
+        color: $learnify-black;
         font-weight: 900;
         cursor: pointer;
     }
