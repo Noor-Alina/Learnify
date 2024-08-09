@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Playground from "./pages/Playground/Playground";
+import EmployeesPage from "./pages/EmployeesPage/EmployeesPage";
 
 function App() {
 
@@ -13,6 +14,11 @@ function App() {
                         path="/"
                         element={<Playground/>}
                     />
+                    <Route
+                        path="/employees"
+                         element={<EmployeesPage />} 
+                    />
+
                 </Routes>
             </div>
         </div>
