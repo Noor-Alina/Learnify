@@ -43,29 +43,6 @@ const Employees = () => {
         <div className="employees-container">
             <div className="employees-card">
                 <Learn/>
-                {/* <h1 className="employees-title">Employees</h1>
-                <div>
-                    <p className="example-text">Learn </p>
-                    <div>
-                        <p><b>Generative artificial intelligence (AI)</b>, e.g. <b>Copilot</b>, <b>chatGPT</b>, is a type of AI that is trained on data and can generate novel content, such as text, images, music, and code. It continuously learns and refines its outputs based on user interactions</p>
-                        <div>
-                            <p><b>A prompt</b> is text that requests the <b>generative AI</b> to perform a specific task.</p>
-                            <p>Simply, <b>enter a prompt.</b> And <b>get a response.</b></p>
-                        </div>
-                        <p>Examples</p>
-                        <div>
-                            <img src="" alt="" />
-                        </div>
-                    </div>
-                </div> */}
-
-
-                {/* <img
-                    src="src/assets/images/static.png"
-                    alt="Employees"
-                    className="employees-image"
-                /> */}
-
                 <div className="prompt-response">
                     <p className="prompt-info">
                         choose a prompt question to see the response:{" "}
@@ -100,7 +77,22 @@ const Employees = () => {
                     </table>
                     <div className="response-section">
                         {response && (
-                            <p className="response-text">{response}</p>
+                             <p className="response-text">
+                             {selectedPrompt === 2 ? (
+                                 response.split("\n").map((line, index) => {
+                                     const [numberAndTitle, ...rest] = line.split(': ');
+                                     return (
+                                         <span key={index}>
+                                             <b>{numberAndTitle}:</b> {rest.join(': ')}<br />
+                                         </span>
+                                     );
+                                 })
+                             ) : (
+                                 response.split("\n").map((line, index) => (
+                                     <span key={index}>{line}<br /></span>
+                                 ))
+                             )}
+                            </p>
                         )}
                     </div>
                     {confirmation && <p>{confirmation}</p>}
