@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home/Home";
 import Playground from "./pages/Playground/Playground";
 import EmployeesPage from "./pages/EmployeesPage/EmployeesPage";
 
@@ -10,8 +11,9 @@ function App() {
         <div className="routes-wrapper">
             <div className="routes-container">
                 <Routes>
+                    <Route path="/" element={<Home/>}/>
                     <Route
-                        path="/"
+                        path="/playground"
                         element={<Playground/>}
                     />
                     <Route
