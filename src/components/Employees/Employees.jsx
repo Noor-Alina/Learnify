@@ -17,19 +17,24 @@ const Employees = () => {
   const [selectedPrompt, setSelectedPrompt] = useState(null);
   const [response, setResponse] = useState('');
   const [followUp, setFollowUP] = useState(null);
-  const [confirmation, setConfirmation] = useState('')
+  const [confirmation, setConfirmation] = useState('');
+  const [followUpId, setFollowUpId] = useState(null);
 
   const handleQuestionClick = (id) => {
     const promptData = prompts.find((p) => p.id === id);
     setResponse(promptData ? promptData.answer : '');
-    setSelectedQuestion(id);
+    setSelectedPrompt(id);
 
     //continue for if it has follow ups
     if (promptData.confirmation) {
       setConfirmation(promptData.confirmation);
-      //jsx==> followUp.map(
+      setFollowUP(promptData.followUp);
     }
   };
+
+  // const handleFollowUpClick = (followUpId) => {
+    
+  // }
 
   /*
   
@@ -53,7 +58,7 @@ const Employees = () => {
                 <tr key={option.id}>
                   <td>
                     <button
-                      className={`question-button ${selectedPrompt === option.id ? 'selected' : ''}`}
+                      className={`question-button ${selectedPrompt === option.id ? 'selected' : 'disabled'}`}
                       onClick={() => handleQuestionClick(option.id)}
                     >
                       {option.question}
@@ -61,11 +66,23 @@ const Employees = () => {
                   </td>
                 </tr>
               ))}
+              
             </tbody>
           </table>
           <div className="response-section">
             {response && <p className="response-text">{response}</p>}
           </div>
+          {/* {confirmation && <p>{confirmation}</p>} */}
+          
+          {/* <table>
+            <tbody>
+              {selectedPrompt && followUp.map((option)=>(
+                <tr key={option.id}>
+                </tr>
+              ))}
+            </tbody>
+          </table> */}
+          
         </div>
       </div>
     </div>

@@ -14,9 +14,11 @@
             "explanation": "With this step gpt is looking for informations in the it that it was thought on blabla",
             "followUp": [
                 {
+                    "id": 1,
                     "option": "Yes"
                 },
                 {
+                    "id": 2,
                     "option": "Please give me some additional strategies",
                     "answer": "1. Batch Similar Tasks: Group similar activities (e.g., emails, calls) to minimize time lost from switching tasks. \n2. Set Time Limits: Assign specific time frames for tasks to enhance focus and urgency, using techniques like the Pomodoro Technique. \n3. Review and Reflect: Regularly assess your time usage and adjust strategies to improve efficiency and stay aligned with your goals.",
                     "explanation": "....."
@@ -31,6 +33,7 @@
             "explanation": "privacy principles..",
             "followUp": [
                 {
+                    "id": 1,
                     "option": "Yes Thank you"
                 }
             ]
