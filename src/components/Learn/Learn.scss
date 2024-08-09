@@ -2,12 +2,12 @@
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-//   font-family: "Coustard";
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    //   font-family: "Coustard";
 }
 
 *,
@@ -44,7 +44,6 @@ body {
         background-color: $learnify-white;
         padding: 1rem;
         border-radius: 20px;
-
     }
 
     &__text--sub {
@@ -65,7 +64,6 @@ body {
         width: 10rem;
         padding: 0.5rem;
         border-radius: 20px;
-
     }
 
     &__images {
@@ -73,9 +71,9 @@ body {
         justify-content: space-between;
 
         img {
-            max-width: 30%; 
-            height: auto; 
-            object-fit: cover; 
+            max-width: 30%;
+            height: auto;
+            object-fit: cover;
         }
     }
 }

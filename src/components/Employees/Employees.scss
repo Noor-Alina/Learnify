@@ -90,3 +90,22 @@
     font-size: 1.2rem;
     color: #333;
 }
+
+.closing-message {
+    background-color: #f1daff;
+    color: #362d64;
+    border-radius: 3rem;
+    padding: 1.5rem;
+}
+
+.try-again {
+    background-color: #bcefec;
+    color: #362d64;
+    cursor: pointer;
+    border-radius: 3rem;
+    padding: 1rem;
+
+    &:hover {
+        background-color: #a1dee7;
+    }
+}
