@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Employees.scss"; // Optional: for styling
 import dataObject from "../../data/employees.json";
+import Learn from "../Learn/Learn";
 
 const prompts = dataObject.prompts; //array
 
@@ -41,13 +42,30 @@ const Employees = () => {
     return (
         <div className="employees-container">
             <div className="employees-card">
-                <h1 className="employees-title">Employees</h1>
-                <p className="example-text">Example </p>
-                <img
+                <Learn/>
+                {/* <h1 className="employees-title">Employees</h1>
+                <div>
+                    <p className="example-text">Learn </p>
+                    <div>
+                        <p><b>Generative artificial intelligence (AI)</b>, e.g. <b>Copilot</b>, <b>chatGPT</b>, is a type of AI that is trained on data and can generate novel content, such as text, images, music, and code. It continuously learns and refines its outputs based on user interactions</p>
+                        <div>
+                            <p><b>A prompt</b> is text that requests the <b>generative AI</b> to perform a specific task.</p>
+                            <p>Simply, <b>enter a prompt.</b> And <b>get a response.</b></p>
+                        </div>
+                        <p>Examples</p>
+                        <div>
+                            <img src="" alt="" />
+                        </div>
+                    </div>
+                </div> */}
+
+
+                {/* <img
                     src="src/assets/images/static.png"
                     alt="Employees"
                     className="employees-image"
-                />
+                /> */}
+
                 <div className="prompt-response">
                     <p className="prompt-info">
                         choose a prompt question to see the response:{" "}
