@@ -3,15 +3,15 @@
         {
             "id": 1,
             "question": "Write a persuasive email template to a potential client.",
-            "answer": "Hi [Client Name], \nAre you tired of [Problem]? Our company offers a proven solution to [Problem]. We've helped countless businesses like yours [Benefit]. Ready to see how we can help you? Let's chat. Best, [Your Name] [Your Title] [Your  Company] [Contact Information]",
-            "explanation": "With this step gpt is looking for informations in the it that it was thought on blabla"
+            "answer": "HHi [Client Name],<br><br>Are you tired of [Problem]? Our company offers a proven solution to [Problem]. We've helped countless businesses like yours [Benefit].<br><br>Ready to see how we can help you? Let's chat.<br><br>Best,<br>[Your Name]<br>[Your Title]<br>[Your Company]<br>[Contact Information]",
+            "explanation": "Here the generative AI analyzes your prompt to determine your question's intent and the specific information required, and it generates text based on the understood prompt and retrieved information"
         },
         {
             "id": 2,
             "question": "What are some effective strategies for managing time better?",
-            "answer": "1. Set Clear Goals: Define short-term and long-term goals to give your tasks direction. \n2. Prioritize Tasks: Use methods like the Eisenhower Matrix to distinguish between urgent and important tasks. \n3. Create a Schedule: Plan your day or week in advance, allocating specific time blocks for different activities. \n4. Limit Distractions: Identify what distracts you and find ways to minimize these interruptions. \n5. Use Tools: Utilize apps or planners to keep track of tasks and deadlines. \n6. Take Breaks: Schedule regular breaks to recharge and maintain productivity.",
+            "answer": "<ool><li>Set Clear Goals: Define short-term and long-term goals to give your tasks direction.</li><li>Prioritize Tasks: Use methods like the Eisenhower Matrix to distinguish between urgent and important tasks.</li><li>Create a Schedule: Plan your day or week in advance, allocating specific time blocks for different activities.</li><li>Limit Distractions: Identify what distracts you and find ways to minimize these interruptions.</li><li>Use Tools: Utilize apps or planners to keep track of tasks and deadlines.</li><li>Take Breaks: Schedule regular breaks to recharge and maintain productivity.</li></ol>",
             "confirmation": "Does that work for you?",
-            "explanation": "With this step gpt is looking for informations in the it that it was thought on blabla",
+            "explanation": "Here the generative AI analyzes your prompt to determine your question's intent and the specific information required, and it generates text based on the understood prompt and retrieved information",
             "followUp": [
                 {
                     "id": 1,
@@ -20,17 +20,17 @@
                 {
                     "id": 2,
                     "option": "Please give me some additional strategies",
-                    "answer": "1. Batch Similar Tasks: Group similar activities (e.g., emails, calls) to minimize time lost from switching tasks. \n2. Set Time Limits: Assign specific time frames for tasks to enhance focus and urgency, using techniques like the Pomodoro Technique. \n3. Review and Reflect: Regularly assess your time usage and adjust strategies to improve efficiency and stay aligned with your goals.",
-                    "explanation": "....."
+                    "answer": "<ool><li>Batch Similar Tasks: Group similar activities (e.g., emails, calls) to minimize time lost from switching tasks.</li><li>Set Time Limits: Assign specific time frames for tasks to enhance focus and urgency, using techniques like the Pomodoro Technique.</li><li>Review and Reflect: Regularly assess your time usage and adjust strategies to improve efficiency and stay aligned with your goals.</li></ol>",
+                    "explanation": "Generative AI include features that encourage dialogue or seek further clarification, so here, it's asking a question to offering additional options"
                 }
             ]
         },
         {
             "id": 3,
             "question": "What is a good excuse to call in sick at work?",
-            "answer": "A good excuse to call in sick at work is food poisoning. This is a legitimate reason as it can leave you feeling very unwell and unable to perform your job effectively. You can say something like, \"I woke up feeling extremely ill after eating something that didn't agree with me, and I need to take a sick day to recover.\" This excuse is generally accepted without requiring further details, as it’s understood that food poisoning can be serious and requires rest and recovery",
+            "answer": "A good excuse to call in sick at work is food poisoning. This is a legitimate reason as it can leave you feeling very unwell and unable to perform your job effectively. You can say something like, I woke up feeling extremely ill after eating something that didn't agree with me, and I need to take a sick day to recover. This excuse is generally accepted without requiring further details, as it’s understood that food poisoning can be serious and requires rest and recovery",
             "confirmation": "Sound good?",
-            "explanation": "privacy principles..",
+            "explanation": "Here the generative AI analyzes your prompt to determine your question's intent and the specific information required, and it generates text based on the understood prompt and retrieved information",
             "followUp": [
                 {
                     "id": 1,
