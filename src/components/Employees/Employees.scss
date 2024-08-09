@@ -1,0 +1,90 @@
+.employees-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  .employees-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .employees-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .example-text {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .employees-image {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .prompt-info {
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .prompt-response {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  .questions-table {
+    display: flex; 
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .question-button {
+    background-color: #c1c3c4;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .question-button:hover {
+    background-color: #7C8CFD;
+  }
+  
+  .question-button.selected {
+    background-color: #7C8CFD;
+  }
+  
+  .response-section {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .response-text {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
