@@ -51,7 +51,7 @@ const Employees = () => {
     return (
         <div className="employees-container">
             <div className="employees-card">
-                <Learn />
+                <Learn/>
                 <div className="prompt-response">
                     <p className="prompt-info">
                         choose a prompt question to see the response:{" "}
@@ -86,7 +86,22 @@ const Employees = () => {
                     </table>
                     <div className="response-section">
                         {response && (
-                            <p className="response-text">{response}</p>
+                             <p className="response-text">
+                             {selectedPrompt === 2 ? (
+                                 response.split("\n").map((line, index) => {
+                                     const [numberAndTitle, ...rest] = line.split(': ');
+                                     return (
+                                         <span key={index}>
+                                             <b>{numberAndTitle}:</b> {rest.join(': ')}<br />
+                                         </span>
+                                     );
+                                 })
+                             ) : (
+                                 response.split("\n").map((line, index) => (
+                                     <span key={index}>{line}<br /></span>
+                                 ))
+                             )}
+                            </p>
                         )}
                     </div>
                     {confirmation && <p>{confirmation}</p>}

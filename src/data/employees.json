@@ -9,7 +9,7 @@
         {
             "id": 2,
             "question": "What are some effective strategies for managing time better?",
-            "answer": "1. Set Clear Goals: Define short-term and long-term goals to give your tasks direction. \n 2.Prioritize Tasks: Use methods like the Eisenhower Matrix to distinguish between urgent and important tasks. \n3.Create a Schedule: Plan your day or week in advance, allocating specific time blocks for different activities. \n4. Limit Distractions: Identify what distracts you and find ways to minimize these interruptions. \n5.Use Tools: Utilize apps or planners to keep track of tasks and deadlines. \n6. Take Breaks: Schedule regular breaks to recharge and maintain productivity.",
+            "answer": "1. Set Clear Goals: Define short-term and long-term goals to give your tasks direction. \n2. Prioritize Tasks: Use methods like the Eisenhower Matrix to distinguish between urgent and important tasks. \n3. Create a Schedule: Plan your day or week in advance, allocating specific time blocks for different activities. \n4. Limit Distractions: Identify what distracts you and find ways to minimize these interruptions. \n5. Use Tools: Utilize apps or planners to keep track of tasks and deadlines. \n6. Take Breaks: Schedule regular breaks to recharge and maintain productivity.",
             "confirmation": "Does that work for you?",
             "explanation": "With this step gpt is looking for informations in the it that it was thought on blabla",
             "followUp": [
