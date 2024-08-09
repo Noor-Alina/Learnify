@@ -14,6 +14,15 @@ const Employees = () => {
     const [followUpResponse, setFollowUpResponse] = useState("");
     const [closingMessage, setClosingMessage] = useState("");
 
+    const resetStates = () => {
+        setSelectedPrompt(null);
+        setResponse("");
+        setFollowUpId(null);
+        setFollowUpResponse("");
+        setConfirmation("");
+        setClosingMessage("");
+    };
+
     const handleQuestionClick = (id) => {
         const promptData = prompts.find((p) => p.id === id);
         setResponse(promptData ? promptData.answer : "");
@@ -23,20 +32,20 @@ const Employees = () => {
             setConfirmation(promptData.confirmation);
             setFollowUp(promptData.followUp);
         } else {
-            setClosingMessage("End of Chatbox");
+            setClosingMessage(
+                "Well Done! That’s how easy Generative AI is to use!"
+            );
         }
     };
 
     const handleFollowUpClick = (id) => {
-        console.log("in handleFollowUpClick");
         const followUpData = followUp.find((f) => f.id === id);
-        setFollowUp(followUpData);
         setFollowUpId(id);
+        setFollowUpResponse(followUpData ? followUpData.answer : "");
 
-        if (followUpData.answer) {
-            setFollowUpResponse(followUpData.answer);
-        }
-        setClosingMessage("End of Chatbox");
+        setClosingMessage(
+            "Well Done! That’s how easy Generative AI is to use!"
+        );
     };
 
     return (
@@ -54,19 +63,19 @@ const Employees = () => {
                                     <td>
                                         <button
                                             className={`question-button ${
-                                              selectedPrompt === option.id
-                                                  ? "selected"
-                                                  : selectedPrompt === null
-                                                  ? ""
-                                                  : "disabled"
-                                          }`}
-                                          onClick={() =>
-                                            handleQuestionClick(option.id)
-                                        }
-                                        disabled={
-                                            selectedPrompt !== null &&
-                                            selectedPrompt !== option.id
-                                        }
+                                                selectedPrompt === option.id
+                                                    ? "selected"
+                                                    : selectedPrompt === null
+                                                    ? ""
+                                                    : "disabled"
+                                            }`}
+                                            onClick={() =>
+                                                handleQuestionClick(option.id)
+                                            }
+                                            disabled={
+                                                selectedPrompt !== null &&
+                                                selectedPrompt !== option.id
+                                            }
                                         >
                                             {option.question}
                                         </button>
@@ -106,10 +115,10 @@ const Employees = () => {
                                             <button
                                                 className={`question-button ${
                                                     followUpId === option.id
-                                                    ? "selected"
-                                                    : followUpId === null
-                                                    ? ""
-                                                    : "disabled"
+                                                        ? "selected"
+                                                        : followUpId === null
+                                                        ? ""
+                                                        : "disabled"
                                                 }`}
                                                 onClick={() =>
                                                     handleFollowUpClick(
@@ -117,9 +126,9 @@ const Employees = () => {
                                                     )
                                                 }
                                                 disabled={
-                                                  followUpId !== null &&
-                                                  followUpId !== option.id
-                                              }
+                                                    followUpId !== null &&
+                                                    followUpId !== option.id
+                                                }
                                             >
                                                 {option.option}
                                             </button>
@@ -133,7 +142,16 @@ const Employees = () => {
                             <p className="response-text">{followUpResponse}</p>
                         )}
                     </div>
-                    {closingMessage && <p>{closingMessage}</p>}
+                    {closingMessage && (
+                        <p className="closing-message">{closingMessage}</p>
+                    )}
+                </div>
+                <div>
+                    {closingMessage && (
+                        <p className="try-again" onClick={resetStates}>
+                            Try Again!
+                        </p>
+                    )}
                 </div>
             </div>
         </div>
