@@ -73,6 +73,11 @@
     background-color: #7c8cfd;
 }
 
+.question-button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 .response-section {
     margin-top: 1rem;
     padding: 1rem;

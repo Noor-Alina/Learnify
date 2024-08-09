@@ -59,13 +59,19 @@ const Employees = () => {
                                     <td>
                                         <button
                                             className={`question-button ${
-                                                selectedPrompt === option.id
-                                                    ? "selected"
-                                                    : "disabled"
-                                            }`}
-                                            onClick={() =>
-                                                handleQuestionClick(option.id)
-                                            }
+                                              selectedPrompt === option.id
+                                                  ? "selected"
+                                                  : selectedPrompt === null
+                                                  ? ""
+                                                  : "disabled"
+                                          }`}
+                                          onClick={() =>
+                                            handleQuestionClick(option.id)
+                                        }
+                                        disabled={
+                                            selectedPrompt !== null &&
+                                            selectedPrompt !== option.id
+                                        }
                                         >
                                             {option.question}
                                         </button>
@@ -90,14 +96,20 @@ const Employees = () => {
                                             <button
                                                 className={`question-button ${
                                                     followUpId === option.id
-                                                        ? "selected"
-                                                        : "disabled"
+                                                    ? "selected"
+                                                    : followUpId === null
+                                                    ? ""
+                                                    : "disabled"
                                                 }`}
                                                 onClick={() =>
                                                     handleFollowUpClick(
                                                         option.id
                                                     )
                                                 }
+                                                disabled={
+                                                  followUpId !== null &&
+                                                  followUpId !== option.id
+                                              }
                                             >
                                                 {option.option}
                                             </button>
