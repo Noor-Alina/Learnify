@@ -1,0 +1,26 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white; 
+  }
+.browser-container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    min-height: 98vh;
+}
+
+
+.routes {
+    &-container{
+        width:  100%;
+        background-color: white;
+        position: relative;
+        border-radius: 0.4rem;
+        margin: 0 clamp(1rem, 0.284rem + 3.579vw, 2rem);
+        top: -4rem;
+       
+    }
+}

@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Playground from "./pages/Playground/Playground";
 import EmployeesPage from "./pages/EmployeesPage/EmployeesPage";
+import './App.scss'
 
 function App() {
 
