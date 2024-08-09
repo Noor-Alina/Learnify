@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Navigate } from "react-router-dom";
+import Playground from "./pages/Playground/Playground";
+import EmployeesPage from "./pages/EmployeesPage/EmployeesPage";
 
 function App() {
 
@@ -11,8 +12,13 @@ function App() {
                 <Routes>
                     <Route
                         path="/"
-                        element={<Navigate to="/" />}
+                        element={<Playground/>}
                     />
+                    <Route
+                        path="/employees"
+                         element={<EmployeesPage />} 
+                    />
+
                 </Routes>
             </div>
         </div>
@@ -21,4 +27,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
