@@ -3,55 +3,55 @@
     justify-content: center;
     align-items: center;
     background-color: white;
-  }
-  
-  .employees-card {
+}
+
+.employees-card {
     background-color: white;
     padding: 2rem;
     text-align: center;
     width: 100%;
     max-width: 800px;
-  }
-  
-  .employees-title {
+}
+
+.employees-title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-  }
-  
-  .example-text {
+}
+
+.example-text {
     font-size: 1.2rem;
     color: #555;
     margin-bottom: 1rem;
-  }
-  
-  .employees-image {
+}
+
+.employees-image {
     width: 100%;
     margin-bottom: 2rem;
-  }
-  
-  .prompt-info {
+}
+
+.prompt-info {
     display: flex;
     align-items: end;
     justify-content: start;
     padding: 1rem;
     font-size: 1.2rem;
-  }
-  
-  .prompt-response {
+}
+
+.prompt-response {
     margin-top: 1rem;
     width: 100%;
-  }
-  
-  .questions-table {
-    display: flex; 
+}
+
+.questions-table {
+    display: flex;
     justify-content: center;
     gap: 1rem;
     width: 100%;
     margin-top: 1rem;
     margin-bottom: 3rem;
-  }
-  
-  .question-button {
+}
+
+.question-button {
     background-color: #c1c3c4;
     color: black;
     border: none;
@@ -63,26 +63,55 @@
     width: 100%;
     text-align: center;
     box-sizing: border-box;
-  }
-  
-  .question-button:hover {
-    background-color: #7C8CFD;
-  }
-  
-  .question-button.selected {
-    background-color: #7C8CFD;
-  }
-  
-  .response-section {
+}
+
+.question-button:hover {
+    background-color: #7c8cfd;
+}
+
+.question-button.selected {
+    background-color: #7c8cfd;
+}
+
+.question-button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.response-section {
     margin-top: 1rem;
     padding: 1rem;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .response-text {
+}
+
+.response-text {
     font-size: 1.2rem;
     color: #333;
-  }
-  
+    white-space: pre-wrap;
+}
+
+.closing-message {
+    background-color: #f1daff;
+    color: #362d64;
+    border-radius: 3rem;
+    padding: 1.5rem;
+}
+
+.try-again {
+    background-color: #bcefec;
+    color: #362d64;
+    cursor: pointer;
+    border-radius: 3rem;
+    padding: 1rem;
+
+    &:hover {
+        background-color: #a1dee7;
+    }
+}
+
+.explanation {
+    color: grey;
+    font-style: italic;
+}

@@ -1,0 +1,59 @@
+@use "../../styles/styles.scss" as *;
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: $learnify-purple;
+  font-family: "Coustard";
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.hero {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero__description {
+    padding-top: 5rem;
+
+    &--title {
+        color: $learnify-white;
+        font-size: 6rem;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    &--subtitle {
+        color: $learnify-white;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    &--button {
+        border-radius: 2rem;
+        border: none;
+        background-color: $learnify-white;
+        width: 15rem;
+        height: 4.5rem;
+        font-size: 1.25rem;
+        color: $learnify-black;
+        font-weight: 900;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #FFF789;
+          }
+    }
+}
