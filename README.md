@@ -5,3 +5,7 @@ Welcome to Learnify, your gateway to mastering artificial intelligence. Our plat
 
 #
 ![Learnify landing page](src/assets/images/Learnify.png)
+
+
+## Mission
+At Learnify, our mission is to teach and educate you on how to use AI, whether for professional growth, academic achievement, or personal enrichment. Our goal is to empower users with the knowledge and skills to leverage AI responsibly and creatively in any aspect of your life.
